@@ -31,4 +31,6 @@ Today I got the invite for YC, so I've been planning how to make a splash.
 
   - [x] Created the plan
   - [x] Create a discussion forum for Snapboard
-  - [ ] Re-start the blog under Snap/Blog (the one you're reading right now!)
+  - [x] Re-start the blog under Snap/Blog (the one you're reading right now!)
+  - [ ] Updates to the homepage for Snapboard
+  - [ ] Updates to the integration page for Snapboard

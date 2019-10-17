@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Snap / Blog`,
     author: `Calum Moore`,
