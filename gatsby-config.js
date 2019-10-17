@@ -2,20 +2,20 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `1 product a week 😬`,
+    title: `Snap / Blog`,
     author: `Calum Moore`,
-    description: `Join me as I take on the challenge of building and launching 1 product every week! This week, I'm building Webframe!`,
-    siteUrl: `https://1productaweek.com`,
-    image: 'https://1productaweek.com/social.png',
+    description: `Join me as I take on my next challenge of scaling Snapboard to a profitable business!`,
+    siteUrl: `https://snapboard.io/blog`,
+    image: 'https://snapboard.io/blog/social.png',
     social: {
-      twitter: `calummoore`,
+      twitter: `snapboardio`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-source-youtube-v2`,
       options: {
-        channelId: ['UCT2lsptYf4WvBsCNBqqHAgQ'], // 'UCT2lsptYf4WvBsCNBqqHAgQ',
+        channelId: ['UCGgMsWaz700FSOjsSriXs5w'],
         apiKey: process.env.YOUTUBE_KEY,
         maxVideos: 50, // Defaults to 50
       },
@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/products`,
-        name: `products`,
+        path: `${__dirname}/content/weekly`,
+        name: `weekly`,
       },
     },
     {
@@ -69,15 +69,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-140920867-1',
+        trackingId: 'UA-144128203-1',
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `1 product a week`,
-        short_name: `1PAW`,
+        name: `Snapobard Blog`,
+        short_name: `SB`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#fff`,
@@ -89,7 +89,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-postcss`,
-    'gatsby-redirect-from',
-    'gatsby-plugin-meta-redirect',
+    // 'gatsby-redirect-from',
+    // 'gatsby-plugin-meta-redirect',
   ],
 }

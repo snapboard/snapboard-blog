@@ -1,19 +1,19 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-// import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
-// import Nav from '../components/nav'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import placeholder from '../img/placeholder-icon.png'
 
-function ProductItem ({ title, desc, icon }) {
+function WeeklyItem ({ title, desc, week, emoji, date }) {
   return (
     <div css={styles.container}>
       <div css={styles.header}>
-        <div css={tw`mb-2`}>
-          <img src={(icon && icon.publicURL) || placeholder} alt='Icon' width={60} />
+        <div>
+          <span css={tw`ml-1 text-sm rounded bg-gray-200 text-gray-600 font-semibold py-1 px-1 mb-4 inline-block`}>
+            Week {week} - {date}
+          </span>
         </div>
+        <span>{emoji} </span>
         { title }
       </div>
       <div css={styles.content}>{ desc }</div>
@@ -21,23 +21,23 @@ function ProductItem ({ title, desc, icon }) {
   )
 }
 
-class ProductsIndex extends React.Component {
+class WeeklyIndex extends React.Component {
   render () {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const products = data.products.edges
+    const weekly = data.weekly.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title='All products' />
+        <SEO title='All weekly updates' />
         <div css={tw`flex flex-wrap -m-3`}>
-          {products.map(({ node }) => {
+          {weekly.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
-            const { description, icon } = node.frontmatter
+            const { description, icon, week, emoji, date } = node.frontmatter
             return (
-              <div css={tw`w-full sm:w-1/3 p-3`} key={node.fields.slug}>
+              <div css={tw`w-full sm:w-1/2 p-3`} key={node.fields.slug}>
                 <Link to={node.fields.slug}>
-                  <ProductItem title={title} desc={description} icon={icon} />
+                  <WeeklyItem title={title} desc={description} icon={icon} week={week} emoji={emoji} date={date} />
                 </Link>
               </div>
             )
@@ -60,7 +60,7 @@ const styles = {
     border-solid
   `,
   header: tw`
-    py-12
+    py-4
     font-sans
     font-bold
     text-gray-700
@@ -75,8 +75,9 @@ const styles = {
     leading-relaxed
     text-gray-800
     text-sm
-    h-24
+    h-20
     bg-gray-100
+    text-gray-600
   `,
 }
 
@@ -87,8 +88,8 @@ export const pageQuery = graphql`
         title
       }
     }
-    products: allMarkdownRemark(
-      filter: { fields: { type: { eq: "products" } } }
+    weekly: allMarkdownRemark(
+      filter: { fields: { type: { eq: "weekly" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -101,9 +102,8 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            icon {
-              publicURL
-            }
+            emoji
+            week
           }
         }
       }
@@ -111,4 +111,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default ProductsIndex
+export default WeeklyIndex

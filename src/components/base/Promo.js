@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react'
-import firebase from 'config/firebase'
+import axios from 'axios'
 import { css } from '@emotion/core'
 import ClickOutside from './ClickOutside'
 
@@ -20,11 +20,10 @@ export function Feedback ({ product }) {
 
   const onSubmit = async (e) => {
     e.preventDefault()
-    const db = firebase.firestore()
-    await db.collection('feedback').add({
-      ...formData,
-      product,
-      date: new Date(),
+    await axios({
+      method: 'POST',
+      data: formData,
+      url: 'https://us-central1-snapreport.cloudfunctions.net/sendBlogFeedback',
     })
     setFormData({})
     setShow(false)

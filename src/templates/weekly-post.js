@@ -42,7 +42,6 @@ class ProductPostTemplate extends React.Component {
         </div>
         <div css={tw`max-w-2xl mx-auto`} className='content'>
           <h1>
-            <img css={css`vertical-align: middle; margin-right: 0.3em;`} alt={title} src={(icon && icon.publicURL) || placeholder} width={60} />
             <span style={{ position: 'relative', top: 3 }}>{post.frontmatter.title}</span>
           </h1>
           <p
@@ -58,8 +57,6 @@ class ProductPostTemplate extends React.Component {
           {toc && (
             <ul css={styles.toc}>{tocEl}</ul>
           )}
-
-          <p>{ post.frontmatter.description }</p>
 
           <div css={css`margin-top: 2em;`}>
             {website && (
@@ -150,11 +147,6 @@ export const pageQuery = graphql`
         description
         week
         toc
-        github
-        website
-        icon {
-          publicURL
-        }
         image {
           publicURL
         }

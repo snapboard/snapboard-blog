@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
-import firebase from 'config/firebase'
+import axios from 'axios'
 import { css } from '@emotion/core'
 import tw from 'tailwind.macro'
 import Layout from '../components/layout'
@@ -10,28 +10,24 @@ import Button from '../components/base/Button'
 import Video from '../components/Video'
 import ArticleItem from '../components/ArticleItem'
 import { Row, Col } from '../components/grid'
-import placeholder from 'img/placeholder-icon.png'
+// import placeholder from 'img/placeholder-icon.png'
 
 const socialBtns = [{
   name: 'Twitter',
   icon: require('img/social/twitter.png'),
-  href: 'https://twitter.com/1productaweek',
-}, {
-  name: 'Medium',
-  icon: require('img/social/medium.png'),
-  href: 'https://medium.com/1productaweek',
+  href: 'https://twitter.com/snapboard_io',
 }, {
   name: 'YouTube',
   icon: require('img/social/youtube.png'),
-  href: 'https://www.youtube.com/channel/UCT2lsptYf4WvBsCNBqqHAgQ',
+  href: 'https://www.youtube.com/channel/UCGgMsWaz700FSOjsSriXs5w',
 }, {
   name: 'GitHub',
   icon: require('img/social/github.png'),
-  href: 'https://github.com/1productaweek',
+  href: 'https://github.com/snapboard',
 }, {
   name: 'Instagram',
   icon: require('img/social/insta.png'),
-  href: 'https://instagram.com/1productaweek',
+  href: 'https://instagram.com/snapboard',
 }]
 
 const updateFormValue = (setFormData, formData, prop) => (e) => setFormData({ ...formData, [prop]: e.target.value })
@@ -56,12 +52,14 @@ const ArticleSideItem = ({ node }) => {
 }
 
 const ProductItem = ({ node }) => {
-  const { title, icon, week, description, status } = node.frontmatter
+  const { title, icon, week, description, status, emoji } = node.frontmatter
   return (
     <div key={title} css={tw`flex`}>
       <div css={css`width: 65px;`}>
         <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-          <img css={css`vertical-align: middle; margin-right: 0.3em;`} alt={title} src={icon ? icon.publicURL : placeholder} width={55} />
+          <div css={styles.emoji} alt={title}>
+            {emoji}
+          </div>
         </Link>
       </div>
       <div css={tw`ml-1 mt-2`}>
@@ -94,7 +92,7 @@ function Home ({ data, location }) {
   const siteTitle = data.site.siteMetadata.title
   const allPages = data.allMarkdownRemark.edges
   const posts = allPages.filter(({ node }) => node.fields.type === 'blog')
-  const products = allPages.filter(({ node }) => node.fields.type === 'products')
+  const weekly = allPages.filter(({ node }) => node.fields.type === 'weekly')
   const videos = data.allYoutubeVideo.edges
 
   const socialBtnsEl = socialBtns.map(({ title, icon, href }) => (
@@ -124,7 +122,7 @@ function Home ({ data, location }) {
     </div>
   ))
 
-  const productsEl = products.map(({ node }) => (
+  const weeklyEl = weekly.map(({ node }) => (
     <div css={tw`mt-4 mb-6`}>
       <ProductItem node={node} />
     </div>
@@ -132,10 +130,12 @@ function Home ({ data, location }) {
 
   const onSubscribe = async (e) => {
     e.preventDefault()
-    await firebase.firestore().collection('subscribers').add({
-      ...formData,
-      product: '1productaweek',
-      date: new Date(),
+    await axios({
+      method: 'POST',
+      data: {
+        email: formData.email,
+      },
+      url: 'https://us-central1-snapreport.cloudfunctions.net/subscribeBlog',
     }).catch((e) => alert(e.message))
     alert('Thank you - you\'re successfully subscribed!')
   }
@@ -148,13 +148,13 @@ function Home ({ data, location }) {
           <div css={css`width:100%;height:0px;position:relative;padding-bottom:56.250%;`}>
             <iframe
               title='Welcome to 1 Product a Week'
-              src='https://streamable.com/s/c93sa/bbebia'
+              src='https://streamable.com/s/hgyom/upzbbm'
               frameBorder='0' width='100%' height='100%' allowFullScreen
               css={css`width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;`} />
           </div>
           <div css={tw`mt-12 mb-20`}>
-            <Title css={tw`mt-6`} to='/products'>Products</Title>
-            { productsEl }
+            <Title css={tw`mt-6`} to='/weekly'>Weekly Updates</Title>
+            { weeklyEl }
           </div>
           <div css={tw`mt-12 mb-20`}>
             <Title css={tw`mt-6`} to='/videos'>Videos</Title>
@@ -169,8 +169,10 @@ function Home ({ data, location }) {
         </div>
         <div css={styles.right} className='xs-hide'>
           <h3 css={tw`mt-2 text-2xl`}>Hello <span role='img' aria-label='Wave'>👋</span></h3>
-          <p css={tw`mt-4 text-sm text-gray-600`}>I’m Calum - I’m a fellow maker and I’ve challenged myself to launch 1 product every week.</p>
-          <Link css={tw`block my-4 text-sm font-semibold text-gray-800`} to='/why-one-product-a-week'>Find out why?!</Link>
+          <p css={tw`mt-4 text-sm text-gray-600`}>
+            I’m Calum - I'm building Snapboard, follow along as I share struggles and progress!
+          </p>
+          <Link css={tw`block my-4 text-sm font-semibold text-gray-800`} to='/why-snapboard'>Find out more</Link>
           <Input
             css={tw`mt-2 text-sm`}
             placeholder='E-mail'
@@ -204,6 +206,13 @@ const styles = {
       flex-none
       border
     `}
+  `,
+  emoji: css`
+    margin-right: 0.3em;
+    font-size: 3em;
+    margin-top: 0.3em;
+    display: block;
+    margin-left: 0.2em;
   `,
 }
 
@@ -247,12 +256,8 @@ export const pageQuery = graphql`
             week
             week
             toc
-            github
-            website
             status
-            icon {
-              publicURL
-            }
+            emoji
           }
         }
       }

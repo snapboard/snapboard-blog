@@ -13,7 +13,7 @@ function VideosIndex ({ data, location }) {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title='All products' />
+      <SEO title='All videos' />
       <h2 css={tw`text-xl mt-4 mb-4 font`}>Videos</h2>
       <Row gutter={2}>
         {videos.map(({ node }) => {

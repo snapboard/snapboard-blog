@@ -22,10 +22,10 @@ const AStyled = styled('a')`
 export default function Nav () {
   return (
     <nav>
-      <LinkStyled to='/why-one-product-a-week'>About</LinkStyled>
-      <LinkStyled to='/products'>Products</LinkStyled>
+      <LinkStyled to='/weekly'>Weekly</LinkStyled>
       <LinkStyled to='/videos'>Videos</LinkStyled>
       <LinkStyled to='/articles'>Articles</LinkStyled>
+      <AStyled href='https://snapboard.io'>Back to Snapboard</AStyled>
     </nav>
   )
 }

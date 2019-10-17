@@ -8,11 +8,11 @@ import ArticleItem from '../components/ArticleItem'
 
 export function ArticlesIndex ({ data, location }) {
   const siteTitle = data.site.siteMetadata.title
-  const articles = data.products.edges
+  const articles = data.blog.edges
 
   return (
     <Layout title={siteTitle}>
-      <SEO title='All products' />
+      <SEO title='All articles' />
       <h2 css={tw`text-xl mt-4 mb-4`}>Articles</h2>
       <div>
         {articles.map(({ node }) => {
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    products: allMarkdownRemark(
+    blog: allMarkdownRemark(
       filter: { fields: { type: { eq: "blog" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {

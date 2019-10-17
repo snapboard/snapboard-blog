@@ -3,14 +3,13 @@ import { Link } from 'gatsby'
 import tw from 'tailwind.macro'
 import Nav from '../components/nav'
 import Promo from './base/Promo'
-import ProductHunt from './base/ProductHunt'
+import logo from '../img/snapboard-logo.png'
 
 class Layout extends React.Component {
   render () {
     const { title, children } = this.props
     return (
       <>
-        <ProductHunt name='Snapboard' id='snapboard-2' />
         <div
           style={{
             marginLeft: `auto`,
@@ -21,7 +20,7 @@ class Layout extends React.Component {
           <header css={tw`clearfix py-8`}>
             <h3
               style={{
-                marginTop: 0,
+                marginTop: -18,
                 fontSize: '1.3em',
                 float: 'left',
               }}
@@ -34,7 +33,8 @@ class Layout extends React.Component {
                 }}
                 to={`/`}
               >
-                {title}
+                <img src={logo} alt='Snapboard Logo' style={{ width: 50, padding: 10, float: 'left' }} />
+                <span style={{ float: 'left', lineHeight: '52px' }}>{title}</span>
               </Link>
             </h3>
             <div css={tw`float-right`}>
@@ -42,11 +42,11 @@ class Layout extends React.Component {
             </div>
           </header>
           <main>{children}</main>
-          <footer css={tw`mt-8`}>
-            © {new Date().getFullYear()}
+          <footer css={tw`mt-8`} style={{ color: '#ccc' }}>
+            Snapboard © {new Date().getFullYear()}
           </footer>
         </div>
-        <Promo product='1productaweek' />
+        <Promo product='Snapboard' />
       </>
     )
   }
