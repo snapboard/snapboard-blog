@@ -1,0 +1,173 @@
+@import "reset.css";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  font-family: 'Lora', serif;
+}
+
+.content h1 + p, 
+.content h2 + p, 
+.content h3 + p, 
+.content h4 + p,
+.content h5 + p,
+.content h1 + ul, 
+.content h2 + ul, 
+.content h3 + ul, 
+.content h4 + ul,
+.content h5 + ul {
+  margin-top: 0.5em;
+}
+
+.content h1 { font-size: 2em; margin-top: 2.5em; margin-bottom: 0.5em; }
+.content h2 { font-size: 1.5em; margin-top: 2.5em; margin-bottom: 0.5em; }
+.content h3 { font-size: 1.17em; margin-top: 2.5em; margin-bottom: 0.5em; }
+.content h4 { font-size: 1em; margin-top: 2.5em; margin-bottom: 0.5em; }
+.content h5 { font-size: .83em; margin-top: 2.5em; margin-bottom: 0.5em; }
+.content h6  { font-size: .67em; margin-top: 2.5em; margin-bottom: 0.5em; }
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i&display=swap');
+
+.content p, .content li {
+  font-family: 'Merriweather', serif;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.content em {
+  font-style: italic;
+}
+
+.content strong {
+  font-weight: 700;
+}
+
+.content .gatsby-resp-image-wrapper {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.content blockquote > p {
+  color: #999;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.content ul {
+  list-style: disc;
+  margin-left: 2em;
+  margin-top: -0.5em;
+}
+
+.content ul ul, .content ol ol {
+  margin-top: -1em;
+}
+
+.content ol {
+  list-style: decimal;
+  margin-left: 2em;
+  margin-top: -0.5em;
+}
+
+.content p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.content pre {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.5;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 3px;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow-x: auto;
+}
+
+.content pre > code {
+  white-space: pre-wrap;
+}
+
+.content p > code {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: #eee;
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  color: #3f51b5;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.task-list-item {
+  list-style: none;
+}
+
+/* Basscss Hide */
+
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media (max-width: 40em) {
+  .xs-hide { display: none !important }
+}
+
+@media (min-width: 40em) and (max-width: 52em) {
+  .sm-hide { display: none !important }
+}
+
+@media (min-width: 52em) and (max-width: 64em) {
+  .md-hide { display: none !important }
+}
+
+@media (min-width: 64em) {
+  .lg-hide { display: none !important }
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
