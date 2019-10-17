@@ -17,6 +17,15 @@ I've applied to [YC](https://ycombinator.com) 3 times before, and this is the fi
 
 ## Weekly Plan
 
+The key goals for this week are to speci
+
+  - [ ] Talk to 3 users (and build specific boards for them)
+  - [ ] Create 40 new cards
+  - [ ] Start testing 3 [“Traction”](https://www.amazon.co.uk/Traction-Startup-Achieve-Explosive-Customer/dp/0241242533) growth channels
+  - [ ] Setups Snapboard metrics page - so I can track changes
+  - [ ] Update website and blog
+
+
 ## Weekly Review
 
 I'll update this at the end of the week! 👍🏽
