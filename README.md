@@ -1,5 +1,3 @@
-# One product a week
+# Snapboard's Blog
 
-I'm creating one product a week, until further notice.
-
-This is the blog to document the story.
+This is the blog for Snapboard - it's cloned from the [1 Product a Week](https://1productaweek.com) blog (as it's a continuation from that).
