@@ -50,6 +50,7 @@ Not a bad day - got most of the stuff I wanted to do done, and although the webs
 ### Day 2
 Friday, 18 October 2019: 🌦 14° - Light rain showers and a moderate breeze
 
+  - [x] Speak to 1 user
   - [ ] Decide on my first 3 traction channels / what type of users to target
   - [ ] Add 10 new cards / integrations
   - [ ] Start Facebook approval (really complex review process 🙄)
@@ -87,22 +88,48 @@ The biggest draw back here, is their likelihood to pay. That said, if we can mak
 
 #### What marketing channels should I use?
 
-Based on the above - I've decided the 3 traction channels I'm going to try first are. They will get a 2 week period starting on Monday 21 October to determine which to focus on:
+Based on the above - I've decided the 3 traction channels I'm going to try first are. They will get a 2 week period starting on *Monday 21 October* to determine which to focus on:
 
-  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is built almost entirely built on integrations! I need to think about what platforms my target group will be on. 🤔
+  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is almost entirely built on integrations! I need to think about what platforms my target group will be on. 🤔
 
   2. Direct Mail - contact people directly who I think might be interested in having a board. ProductHunt, Startup School, etc. Don't want this to be spammy, so need to think carefully how to implament this.
 
   3. Community - where do start-up founders hang-out? Start-up school, IndieHackers, Slack communities, Quora?
 
+I'll be measuring these on hits to the website and conversion to signup. **TODO:** need to make sure there is a way for me to measure this.
+
 
 #### What kinds of cards would Start-up founders be most interested in?
 
-  1. Server/service metrics - a simple look at how your website is performing - could also involve DBs (how many records in a queue, uptime stats, total number of errors)
+  1. Server metrics - a simple look at how your website is performing - could also involve DBs (how many records in a queue, uptime stats, total number of errors)
   2. Website/user analytics - Google Analytics, Mixpanel, Amplitude, Segment
-  3. Conversions and financial metrics - Stripe for MRR, 
+  3. Conversions and financial metrics - Stripe for MRR, Paypal, Podio
   4. Costs and spend - in particular server costs, but any other variables too
   5. List of customers, e-mail address and possibly status (paying / non-paying) - most likely from a DB
   6. Support requests - some metrics on how many tickets - would be much more interesting if we could do this by category! E.g. 20% of support requests are for password reset.
 
 
+#### Feedback from User 1
+
+Founder - SaaS / Video
+
+1. Interested in usage metrics - 
+    * New visitors to the site - Google Analytics
+    * Users who render a video - Mixpanel
+    * New paid users - Stripe
+2. Number of failures - Google Cloud / DB
+3. Being able to restart servers - Google Cloud / DB
+4. Resetting passwords (as currently have to go into DB) - DB
+5. Check if user is on paid plan - DB / Stripe
+
+They use the following apps:
+
+ * Google Cloud
+ * Postgres
+ * Mailgun
+ * Mailchimp
+ * Mixpanel
+ * Netlify
+ * Heroku
+ * Bitbucket
+ * Sentry
