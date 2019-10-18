@@ -51,10 +51,10 @@ Not a bad day - got most of the stuff I wanted to do done, and although the webs
 Friday, 18 October 2019: 🌦 14° - Light rain showers and a moderate breeze
 
   - [x] Speak to 1 user
-  - [ ] Decide on my first 3 traction channels / what type of users to target
+  - [x] Decide on my first 3 traction channels / what type of users to target
   - [ ] Add 10 new cards / integrations
-  - [ ] Start Facebook approval (really complex review process 🙄)
   - [ ] Public Snapboard metrics page
+  - [ ] Start Facebook approval (really complex review process 🙄)
   - [ ] Updates to the homepage for Snapboard
   - [ ] Improve capturing of analytics events - so I can better understand user actions
 
