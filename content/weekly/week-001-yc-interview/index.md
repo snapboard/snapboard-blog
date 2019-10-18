@@ -17,7 +17,7 @@ I've applied to [YC](https://ycombinator.com) 3 times before, and this is the fi
 
 ## Weekly Plan
 
-The key goals for this week are to speci
+The key goals for this week are to:
 
   - [ ] Talk to 3 users (and build specific boards for them)
   - [ ] Create 40 new cards / integrations
@@ -28,7 +28,7 @@ The key goals for this week are to speci
 
 ## Weekly Review
 
-I'll update this at the end of the week! 👍🏽
+*I'll update this at the end of the week! 👍🏽*
 
 
 ## Daily Log
@@ -60,38 +60,40 @@ Friday, 18 October 2019: 🌦 14° - Light rain showers and a moderate breeze
 
 #### Which users should I target?
 
-I've seen all of these groups on the app so far, but I need to have more focus to make the product better for a specific group, and then I can scale to others later.
+I've seen all of the following groups on Snapboard so far, but I need to have more focus to make the product better for a specific group, and then I can scale to others later.
 
-  1. Marketing guy/gal - probably uses Adwords, Social, Google Analytics - not as tech savvy, will rely almost exclusively on the pre-made cards being what they need.
+  1. Marketing guy/gal - uses quite a few different apps: Adwords, Social, Google Analytics, etc. Possibly not as tech savvy, will rely more on the pre-made cards being what they need. Could drive more support requests too.
 
-  2. Start-up founders - this is an active group, and one likely to give me a lot of feedback and invest in the product. They probably have more apps as they're managing/covering a bigger area. Possibly less likely to pay? I'm also part of this group (and already know quite a few others in this group), which makes it attractive.
+  2. Start-up founders (early stage) - this is an active group, and one likely to give me a lot of feedback and invest in the product. They probably have more apps as they're managing/covering a bigger area (e.g. start up founders do a bit of everything). I'm also part of this group (and already know quite a few others in this group), which makes it attractive. Possibly less likely to pay? 
 
-  3. Teams - this is probably to broad a group to be considered as an option right now, but definetely something we will want to cater specifically for in the future.
+  3. Teams - this is probably too broad a group to be considered an option right now, but definitely something we will want to cater specifically for in the future - when we understand more about the different types of teams using it.
 
-  4. Agencies - possibly less tech-savy. High conviction to pay if we get them something they want. They might be reasonably well served by existing dashboards though?
+  4. Agencies - the decision maker (who runs the agency) might not be as tech savvy, but possibly someone who works for them might be. High conviction to pay if we get them something they want - as they'll often share boards with their clients. They might be better served by existing dashboards than other groups though?
 
-  5. E-commerce - often work through an agency for this type of reporting (although not exclusively),  so overlap with the above. Main focus would be on Shopify and other e-commerce platforms, but also has fairly strong links to marketing (as they're keen to understand attribution).
+  5. E-commerce - often work through an agency for this type of reporting (although not exclusively), so overlap with the above. Main focus would be on Shopify and other e-commerce platforms, but also has fairly strong links to marketing (as they're keen to understand attribution of sales).
 
 
 The key things to evaluate when picking the group to target is:
 
-  1. How easily can I access this market - do I already know people in it?
+  1. How easily can I access this market - do I already know people/communities?
   2. How likely are they to pay?
-  3. How invested would they be in the product? Would they become embassadors?
-  4. How technical the group is - would they be able to validate the customization angle.
+  3. How invested would they be in the product? Would they become ambassadors?
+  4. How technical the group is - would they be able to validate the more advanced features (e.g. formula)?
 
-Based on this, the main group I've decided to target is: **Start-up founders**. The biggest draw back here, is their likihood to pay. That said, if we can make it work for Start-up founders, then I think we will be able to transition into teams. Also, if we can make these guys pay - that's a very good sign!
+Based on this, the main group I've decided to target is: **Start-up founders (early stage)**. 
+
+The biggest draw back here, is their likelihood to pay. That said, if we can make it work for start-up founders, then I think we will be able to transition into teams and businesses. Also, if we can make these guys pay - that's a very good sign!
 
 
 #### What marketing channels should I use?
 
-Based on the above - I've decided the 3 traction channels I'm going to try first:
+Based on the above - I've decided the 3 traction channels I'm going to try first are:
 
-  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is built almost entirely built on integratons!
+  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is built almost entirely built on integrations!
 
   2. Direct Mail - contact people directly who I think might be interested in having a board.
 
-  3. Community - build this up around my blog, the community on Snapboard and others
+  3. Community - where do founders hang-out? Start-up school, IndieHackers, 
 
 
 
