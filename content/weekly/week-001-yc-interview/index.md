@@ -87,14 +87,22 @@ The biggest draw back here, is their likelihood to pay. That said, if we can mak
 
 #### What marketing channels should I use?
 
-Based on the above - I've decided the 3 traction channels I'm going to try first are:
+Based on the above - I've decided the 3 traction channels I'm going to try first are. They will get a 2 week period starting on Monday 21 October to determine which to focus on:
 
-  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is built almost entirely built on integrations!
+  1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is built almost entirely built on integrations! I need to think about what platforms my target group will be on. 🤔
 
-  2. Direct Mail - contact people directly who I think might be interested in having a board.
+  2. Direct Mail - contact people directly who I think might be interested in having a board. ProductHunt, Startup School, etc. Don't want this to be spammy, so need to think carefully how to implament this.
 
-  3. Community - where do founders hang-out? Start-up school, IndieHackers, 
+  3. Community - where do start-up founders hang-out? Start-up school, IndieHackers, Slack communities, Quora?
 
 
+#### What kinds of cards would Start-up founders be most interested in?
+
+  1. Server/service metrics - a simple look at how your website is performing - could also involve DBs (how many records in a queue, uptime stats, total number of errors)
+  2. Website/user analytics - Google Analytics, Mixpanel, Amplitude, Segment
+  3. Conversions and financial metrics - Stripe for MRR, 
+  4. Costs and spend - in particular server costs, but any other variables too
+  5. List of customers, e-mail address and possibly status (paying / non-paying) - most likely from a DB
+  6. Support requests - some metrics on how many tickets - would be much more interesting if we could do this by category! E.g. 20% of support requests are for password reset.
 
 
