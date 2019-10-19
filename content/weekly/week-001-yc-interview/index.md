@@ -52,11 +52,18 @@ Friday, 18 October 2019: 🌦 14° - Light rain showers and a moderate breeze
 
   - [x] Speak to 1 user
   - [x] Decide on my first 3 traction channels / what type of users to target
-  - [ ] Add 10 new cards / integrations
+  - [x] Fix formula (sometimes it was crashing)
+  - [x] Add Snapboard to Saasified Homepage
+  - [ ] Add Snapboard to Webframe.xyz
+  - [ ] Add 5 new cards / integrations
   - [ ] Public Snapboard metrics page
   - [ ] Start Facebook approval (really complex review process 🙄)
   - [ ] Updates to the homepage for Snapboard
   - [ ] Improve capturing of analytics events - so I can better understand user actions
+
+Maybe I was a bit too ambitious! Either way, I need to prioritize creating cards. This is one of the best ways I can create new value for people, and prove to YC that I can move quickly. If I can get 6 done per day over the next 17 days - that's 102 cards when I meet YC.
+
+Really pleased we've started to understand who we will target though - this will be really helpful for all future decisions.
 
 
 #### Which users should I target?
@@ -133,3 +140,14 @@ They use the following apps:
  * Heroku
  * Bitbucket
  * Sentry
+
+ 
+
+#### Integrations Added
+
+ [ ] Youtube video list + hits
+ [ ] Google Analytics - active users per day (returning/new)
+ [ ] Google Analytics - cohort (retention)
+ [ ] Firebase users (over time)
+ [ ] Search Firebase users by email and get ID
+ [ ] Google Cloud - costs
