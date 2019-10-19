@@ -5,7 +5,7 @@ description: I got a YC interview, so taking a step back to review where I am an
 week: 1
 status: In Progress
 emoji: 🎉
-toc: Plan,Day 1,Day 2
+toc: Plan,Day 1,Day 2,Day 3
 image: ./yc-interview-invite.png
 ---
 
@@ -141,13 +141,19 @@ They use the following apps:
  * Bitbucket
  * Sentry
 
- 
 
-#### Integrations Added
 
- [ ] Youtube video list + hits
- [ ] Google Analytics - active users per day (returning/new)
- [ ] Google Analytics - cohort (retention)
- [ ] Firebase users (over time)
- [ ] Search Firebase users by email and get ID
- [ ] Google Cloud - costs
+### Day 3
+
+Saturday, 19 October 2019: 🌥 15° - Sunny intervals and a moderate breeze
+
+It's a Saturday, but the girlfriend is away at a festival, so that means I'll be working today. 🤓
+
+As I said yesterday, I need to focus more on getting a baseline of integrations/cards added each day. So this will be the first thing I do each day.
+
+ - [ ] Create 6 integrations
+ - [ ] Add Snaboard to Webframe
+ - [ ] Start facebook for Facebook approval
+ - [ ] Add formula dropdown
+ - [ ] Updates to the homepage for Snapboard
+
