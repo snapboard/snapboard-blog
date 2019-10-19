@@ -157,3 +157,26 @@ As I said yesterday, I need to focus more on getting a baseline of integrations/
  - [ ] Add formula dropdown
  - [ ] Updates to the homepage for Snapboard
 
+
+#### New Cards
+
+ - [x] YouTube - Video Stats
+ - [ ] Firebase - new users over time
+ - [ ] 
+
+
+#### A better way to handle imported data?
+
+Having worked with the YouTube data import today, it seems like we may need a better way to work with the data we import. The problem is, some APIs produce a fairly complex multi-depth response (YouTube is a case in point). It returns multiple types of ID, sometimes it's a string, sometimes it's an object! Even the title of a video is not at the root level (you have to use `snippet.title` 🤯)?! If all this sounds confusing 😅 - just take from it that YouTube's API is a mess, and I don't want to pass this mess and complexity onto the user. So I'm considering tampering/normalizing the data to make it easier to understand and use. 
+
+The other benefit of normalizing the data in some way, is that if I can find a way to normalize similar types of data across apps, it means that the same card will work across apps too - so the user can seamlessly switch. Imagine a chat card that you can seamlessly switch between Intercom, Slack or Drift?
+
+The problem with editing/normalizing though is as follows:
+
+  * It can be hard to maintain as changes to a 3rd party API would need to manually updated in Snapboard
+  * There's not always an obvious way to link data
+  * It needs to be easily
+  * Some data makes sense to be multi-depth - e.g. details of an image
+
+
+🤔 Need to think about this some more.
