@@ -24,6 +24,7 @@ The key goals for this week are to:
   - [ ] Start testing 3 [“Traction”](https://www.amazon.co.uk/Traction-Startup-Achieve-Explosive-Customer/dp/0241242533) growth channels
   - [ ] Setup public Snapboard metrics page - so I can better track changes
   - [ ] Update website and blog
+  - [ ] [Hire someone](https://discuss.snapboard.io/t/were-hiring/16) to help! 
 
 
 ## Weekly Review
@@ -149,25 +150,39 @@ Saturday, 19 October 2019: 🌥 15° - Sunny intervals and a moderate breeze
 
 It's a Saturday, but the girlfriend is away at a festival, so that means I'll be working today. 🤓
 
-As I said yesterday, I need to focus more on getting a baseline of integrations/cards added each day. So this will be the first thing I do each day.
+You'll notice, I've also added a tag to each action item below. I want to make sure that I make progress with each of the following every day:
 
- - [ ] Create 6 integrations
- - [ ] Add Snaboard to Webframe
- - [ ] Start facebook for Facebook approval
- - [ ] Add formula dropdown
- - [ ] Updates to the homepage for Snapboard
+ - #cards - adding new integrations and cards
+ - #marketing - getting people to visit to [snapboard.io](https://snapboard.io)
+ - #optimize - small changes which increase conversion - getting more people to signup and create cards
+ - #talk - keep talking to users (which should help shape the above items)
+
+So here are my goals/tasks for today:
+
+ - [ ] Create 6 integrations #cards
+ - [x] Added webhook logic (required for Github integration) #cards
+ - [x] Add Snaboard to Webframe #marketing
+ - [ ] Start Facebook approval #cards
+ - [ ] Add formula dropdown #feature
+ - [ ] Updates to the homepage for Snapboard #optimize
 
 
 #### New Cards
 
  - [x] YouTube - Video Stats
- - [ ] Firebase - new users over time
- - [ ] 
+ - [x] Firebase - new users over time
+ - [ ] **Github** - Issues
+ - [ ] **Github** - Repos
+ - [ ] **Trello** - Cards assigned to me
+ - [ ] **Wufoo** - number of response to form
+ - [ ] **Wufoo** - chart with question response totals
+
+**Bold** for new integrations
 
 
 #### A better way to handle imported data?
 
-Having worked with the YouTube data import today, it seems like we may need a better way to work with the data we import. The problem is, some APIs produce a fairly complex multi-depth response (YouTube is a case in point). It returns multiple types of ID, sometimes it's a string, sometimes it's an object! Even the title of a video is not at the root level (you have to use `snippet.title` 🤯)?! If all this sounds confusing 😅 - just take from it that YouTube's API is a mess, and I don't want to pass this mess and complexity onto the user. So I'm considering tampering/normalizing the data to make it easier to understand and use. 
+Having worked with the YouTube data import today, it seems like we may need a better way to work with the data we import. The problem is, some APIs produce a fairly complex multi-depth response (YouTube is a case in point). It returns multiple types of ID, sometimes it's a string, sometimes it's an object! Even the title of a video is not at the root level (you have to use `snippet.title` 🤯)?! If all this sounds confusing, it is! 😅 YouTube's API is a mess (and I'm sure it's not the only one), and I don't want to pass this mess and complexity onto users. So I'm considering tampering/normalizing the data to make it easier to understand and use. 
 
 The other benefit of normalizing the data in some way, is that if I can find a way to normalize similar types of data across apps, it means that the same card will work across apps too - so the user can seamlessly switch. Imagine a chat card that you can seamlessly switch between Intercom, Slack or Drift?
 
