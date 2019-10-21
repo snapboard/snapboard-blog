@@ -3,6 +3,8 @@ title: Serverless dashboards 🤯
 date: "2019-10-21T00:00:00.000Z"
 ---
 
+***BTW, if you’re into this kind of stuff - maybe you’d like to [come join us - we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 🚀
+
 One of the really cool parts of [Snapboard](https://snapboard.io) is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
 
 ![Editor](editor.png "Editor")
@@ -14,8 +16,6 @@ And because each card is bundled separately - you can easily embed them anywhere
 </div>
 
 Here’s a quick summary of how we got it all working.
-
-***BTW, if you’re into this kind of stuff - maybe you’d like to [come join us - we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 🚀
 
 ## Step 1: A high level plan
 The first thing I needed to do, was decide what would make up a card. I wanted to keep things really simple, so I decided that a card would be made up from just 3 source files:
