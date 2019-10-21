@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5 {
   color: #333;
   line-height: 1.5;
   border: 1px solid #eee;
-  background: #fafafa;
+  background: #fbfbfb !important;
   border-radius: 3px;
   padding: 1em;
   margin-top: 2em;
@@ -111,7 +111,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .content pre > code {
+  background: none;
+}
+
+.content code {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   white-space: pre-wrap;
+  background: #eee;
+  font-size: 0.9em !important;
 }
 
 .content p > code {

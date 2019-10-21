@@ -40,9 +40,9 @@ export default function Signup ({ forceShow, title = <span>Hello <span role='img
       <Profile style={{ float: 'right', margin: '15px' }} />
       <h6 css={tw`mt-2 font-bold text-lg`}>{title}</h6>
       <p css={tw`my-3 text-gray-700`}>
-        I’m Calum - I’m a fellow maker and I’ve challenged myself to launch 1 product every week (
-        <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/1productaweek'>@1productaweek</a>).
-        <Link to='./why-one-product-a-week'> Find out why!?</Link></p>
+        I’m Calum - follow me as I share the highs and lows of starting a SaaS company in 2019. You can also follow on Twitter
+        <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/snapboard_io'>@snapboard_io</a>).
+       </p>
       <Input
         type='email'
         value={formData.email || ''}

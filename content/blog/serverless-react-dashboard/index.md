@@ -3,18 +3,20 @@ title: Serverless dashboards 🤯
 date: "2019-10-21T00:00:00.000Z"
 ---
 
-One of the really cool parts of Snapboard is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
+One of the really cool parts of [Snapboard](https://snapboard.io) is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
 
 And because each card is bundled separately - you can easily embed them anywhere (like below).
 
-<iframe width='380' height='350' src='https://www.snapboard.io/embed/2K0JxrPtYyJRCRYZL0UC' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
+<div style="width:380px; height:350px;">
+<iframe width="100%" height="100%" src='https://www.snapboard.io/embed/2K0JxrPtYyJRCRYZL0UC' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>
+</div>
 
 Here’s a quick summary of how we got it all working.
 
 ***BTW, if you’re into this kind of stuff - maybe you’d like to [come join us - we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 🚀
 
 ### Step 1: A high level plan
-The first thing I needed to do, was decide what would make up the card. I wanted to keep things really simple, so I decided that a card would be made up from just 3 source files:
+The first thing I needed to do, was decide what would make up a card. I wanted to keep things really simple, so I decided that a card would be made up from just 3 source files:
 
 #### Client side
 
@@ -25,16 +27,16 @@ The first thing I needed to do, was decide what would make up the card. I wanted
 
 3. `server.js` - would take care of getting any data required
 
-I did consider not having a server-side component at all, as the user could make requests directly from the browser - but that came with a whole load of problems - how do we safely pass credentials, how do we protect against rate limits, how do we apply push updates? Because of these, I went for both a client and server side approach.
+I did consider not having a server-side component at all, as the user could make requests directly from the browser - but that came with a whole load of other problems - how do we safely pass credentials, how do we protect against rate limits, how do we apply push updates? Because of these, I went for both a client and server side approach.
 
 Both the client side and serverless code would need to be bundled separately - so that was the next step.
 
 
 ### Step 2: Bundling the client-side code
 
-The client side bundle would consist of 2 files and any dependencies requested by the user. I decided to use webpack, as I already used it in my other projects.
+The client side bundle would consist of 2 files (`card.js` and `styles.css`) and any dependencies requested by the user. I decided to use webpack, as I already used it in my other projects - so the learning curve would be less.
 
-The key challenge here though was figuring out how I would load the custom user bundle into the “card wrapper”.  The “card wrapper” would be responsible for loading any user’s custom bundle and communicating with a parent (so we can push data updates from `server.js`).
+The key challenge here though was figuring out how I would load the custom user bundle into the “card wrapper”.  The “card wrapper” would be responsible for loading any user’s custom bundle and communicating with a parent (so we can push data updates from `server.js` into the `card.js` component).
 
 That’s actually not as easy as it sounds, because normally when you compile using webpack, you have all the code and dependencies available at compile time - in this case I won’t.
 
