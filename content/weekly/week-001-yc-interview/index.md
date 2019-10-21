@@ -221,6 +221,7 @@ Here's a quick summary of my plan of action for hiring. I created a new blog pos
   - [ ] HackerNews - post my blog article to HackerNews
   - [ ] Reddit
   - [ ] E-mail subscribers to my blog
+  - [ ] E-mail people who created custom cards on Snapboard
   - [ ] Fiver / Upwork - post a job, need to think of the right thing to ask for!
   - [ ] Medium - look for writers with around 100 upvotes on a tech related article (it means their not a household name so might be interested in this oppertunity!)
 

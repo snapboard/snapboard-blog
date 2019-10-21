@@ -1,4 +1,7 @@
-# Serverless dashboards 🤯
+---
+title: Serverless dashboards 🤯
+date: "2019-10-21T00:00:00.000Z"
+---
 
 One of the really cool parts of Snapboard is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
 
