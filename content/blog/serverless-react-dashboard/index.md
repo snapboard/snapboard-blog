@@ -5,6 +5,8 @@ date: "2019-10-21T00:00:00.000Z"
 
 One of the really cool parts of [Snapboard](https://snapboard.io) is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
 
+![Editor](editor.png "Editor")
+
 And because each card is bundled separately - you can easily embed them anywhere (like below).
 
 <div style="width:380px; height:350px;">
@@ -15,7 +17,7 @@ Here’s a quick summary of how we got it all working.
 
 ***BTW, if you’re into this kind of stuff - maybe you’d like to [come join us - we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 🚀
 
-### Step 1: A high level plan
+## Step 1: A high level plan
 The first thing I needed to do, was decide what would make up a card. I wanted to keep things really simple, so I decided that a card would be made up from just 3 source files:
 
 #### Client side
@@ -32,7 +34,7 @@ I did consider not having a server-side component at all, as the user could make
 Both the client side and serverless code would need to be bundled separately - so that was the next step.
 
 
-### Step 2: Bundling the client-side code
+## Step 2: Bundling the client-side code
 
 The client side bundle would consist of 2 files (`card.js` and `styles.css`) and any dependencies requested by the user. I decided to use webpack, as I already used it in my other projects - so the learning curve would be less.
 
@@ -99,7 +101,7 @@ module.exports = config;
 ```
 
 
-### Step 3: Server-side
+## Step 3: Server-side
 
 I wanted to have each users code deployed to an AWS Lambda function - that would ensure complete isolation and security when running the custom code. The service would be given no permissions at all to do anything else in AWS - and I wouldn’t run anything else in that account just in case!
 
@@ -112,7 +114,7 @@ require("babel-core").transform("code", options);
 
 This time, there was no need to bundle the dependencies, as we’re working server-side - so I would just install them when deploying the code to AWS.
 
-### Step 4: Deploying users code
+## Step 4: Deploying users code
 
 So the previous two steps got a basic demo working, and the code in the format I needed - but I still needed a way to build and deploy both the client and server side code on demand when the user “publishes” their card.
 
@@ -156,10 +158,10 @@ async function loadScript () {
 ```
 
 
-### Conclusion
+## Conclusion
 And that’s it - we now have isolated, user deployable, serverless functions and react components. Pretty neat! 🎉
 
-We also created an online editor to allow users to submit their own code - but that’s a story for another day! If you want to check it out, you can use the button below to create your own card!
+We also created an online editor to allow users to submit their own code - but that’s a story for another day! If you want to check it out, you can use the button below to [create your own card](https://snapboard.io/docs/custom-cards)!
 
 <a href='/editor/new'>
   <button style="cursor: pointer; color: #fff; background-color: #007bff; border-color: #007bff; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; margin-bottom: 1em;">Create Custom Card</button>
