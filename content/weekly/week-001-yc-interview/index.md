@@ -159,20 +159,21 @@ You'll notice, I've also added a tag to each action item below. I want to make s
 
 So here are my goals/tasks for today:
 
- - [ ] Create 6 integrations #cards
+ - [-] Create 6 integrations #cards
  - [x] Added webhook logic (required for Github integration) #cards
  - [x] Add Snaboard to Webframe #marketing
  - [ ] Start Facebook approval #cards
  - [ ] Add formula dropdown #feature
  - [ ] Updates to the homepage for Snapboard #optimize
 
+Still not enough progress on creating cards. Need to keep working at making this faster!
 
 #### New Cards
 
  - [x] YouTube - Video Stats
  - [x] Firebase - new users over time
- - [ ] **Github** - Issues
- - [ ] **Github** - Repos
+ - [x] **Github** - Issues
+ - [x] **Github** - Repos
  - [ ] **Trello** - Cards assigned to me
  - [ ] **Wufoo** - number of response to form
  - [ ] **Wufoo** - chart with question response totals
@@ -195,3 +196,31 @@ The problem with editing/normalizing though is as follows:
 
 
 🤔 Need to think about this some more.
+
+
+### Day 4
+
+Monday, 21 October 2019: ☁️ 13° - Thick cloud and a gentle breeze
+
+Today's focus is on getting the message out that we're hiring. I really need some help to make sure we've made good progress for YC.
+
+ - [x] Add beta mode, so we can give access to 3rd parties to test their integration, without confusing everyone else!
+ - [ ] Marketing for hiring (see below)
+ - [ ] Start Facebook approval #cards
+ - [ ] Add 6 more cards
+ - [ ] Add formula dropdown #feature
+
+
+#### Marketing for Hiring
+
+Here's a quick summary of my plan of action for hiring. I created a new blog post yesterday evening, which I will use as part of the promotion for the job role. It helps to have something related and interesting to offer communities you are posting to.
+
+  - [ ] Slack communities - in particular dev related ones!
+  - [ ] Reactiflux - post my blog article, and to their jobs channel
+  - [ ] IndieHackers
+  - [ ] HackerNews - post my blog article to HackerNews
+  - [ ] Reddit
+  - [ ] E-mail subscribers to my blog
+  - [ ] Fiver / Upwork - post a job, need to think of the right thing to ask for!
+  - [ ] Medium - look for writers with around 100 upvotes on a tech related article (it means their not a household name so might be interested in this oppertunity!)
+
