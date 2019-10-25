@@ -56,12 +56,38 @@ Julio did an incredible job getting the first version of the formula autocomplet
 
 Need to start work on marketing today, and find a way to try and get more people talking to me. PLEASE SOMEBODY TALK TO ME! 😂
 
-  - [ ] Talk to a potential user (e.g. start-up founder) - Megamaker Slack Group?
-  - [ ] Start one new marketing channel
+  - [x] Talk to a potential user (e.g. start-up founder) - Megamaker Slack Group?
+  - [x] Sent blog e-mail out
   - [ ] Create new card inputs apprach (make editing cards much nicer!) 
+  - [ ] Start one new marketing channel
 
 
 *To be continued...*
+
+<details>
+	<summary><h4>Talk with Potential User</h4></summary>
+
+	Founder - SaaS - Developer Tools / Productivity
+
+	Has built his own internal dashboard to see the metrics that really matter to him. Doesn't use other tools, because existing dashboards don't show him what he needs - or would take too long to configure! His current (internally built dashboard), pulls everything from his DB. He's not sure if he would give access to the DB or not. There's basically only 3 options getting DB data - push (like Mixpanel `track`), pull from an exposed API that gets data from the DB or direct DB access. Seems like the best option might be some kind of push - and then we can create a library for each language.
+
+	Metrics that matter are Signups, Installs, Active Customers. He also tracks engagement on a per user level - so he sees if users have done key activity like - how far are they through their trial, how many participants, how many reports they've generated.
+
+	Recommended that I start a Typeform to ask people what integrations they want, sounds like a good idea. Unsure whether to send it to the entire list on Snapboard though, because I don't want to send too many e-mails and I want to update them once we have more apps in play - oh wait - that's catch 22 😂. I probably need to e-mail them next week anyway, to allow people time to engage before the interview so I'll attach it to that.
+
+	They use the following apps:
+
+	* Beamer
+	* Helpscout
+	* Sentry
+	* Stripe
+	* Mixpanel - no longer uses as much
+	* Mailerlite
+	* Postmark
+	* AWS / EC2 and RDS
+	* Datadog
+	* Logrocket
+</details>
 
 
 ## Review
