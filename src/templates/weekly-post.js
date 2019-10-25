@@ -34,7 +34,7 @@ class ProductPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={`Week ${week}: ${title}`}
-          description={`How I built and launched ${title} in 1 week - ${post.frontmatter.description || post.excerpt}`}
+          description={`Week ${week} - ${post.frontmatter.description || post.excerpt}`}
           image={image && image.publicURL}
         />
         <div css={css`margin-top: 3em; margin-bottom: 2em; ${tw`max-w-2xl mx-auto`}`}>
