@@ -52,7 +52,7 @@ const ArticleSideItem = ({ node }) => {
 }
 
 const ProductItem = ({ node }) => {
-  const { title, icon, week, description, status, emoji } = node.frontmatter
+  const { title, icon, week, description, score, emoji } = node.frontmatter
   return (
     <div key={title} css={tw`flex`}>
       <div css={css`width: 65px;`}>
@@ -71,7 +71,7 @@ const ProductItem = ({ node }) => {
         <p css={tw`mt-2 text-sm text-gray-800`} dangerouslySetInnerHTML={{
           __html: description || node.excerpt,
         }} />
-        {status && <p css={tw`mt-2 text-sm text-gray-800`}><span css={tw`font-semibold`}>Status: </span>{status}</p>}
+        {score && <p css={tw`mt-2 text-sm text-gray-800`}><span css={tw`font-semibold`}>Score: </span>{score}</p>}
       </div>
     </div>
   )
@@ -256,7 +256,7 @@ export const pageQuery = graphql`
             week
             week
             toc
-            status
+            score
             emoji
           }
         }

@@ -3,7 +3,7 @@ title: YC Interview Invite!
 date: "2019-10-17T00:00:00.000Z"
 description: I got a YC interview, and hired my first 2 devs!
 week: 1
-status: In Progress
+score: 7/10
 emoji: 🎉
 toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Review
 image: ./yc-interview-invite.png
@@ -145,20 +145,20 @@ Saturday, 19 October 2019: 🌥 15° - Sunny intervals and a moderate breeze
 
 It's a Saturday, but the girlfriend is away at a festival, so that means I'll be working today. 🤓
 
-You'll notice, I've also added a tag to each action item below. I want to make sure that I make progress with each of the following every day:
+I want to make sure that I make progress with each of the following every day:
 
- - #cards - adding new integrations and cards
- - #marketing - getting people to visit to [snapboard.io](https://snapboard.io)
- - #optimize - small changes which increase conversion - getting more people to signup and create cards
- - #talk - keep talking to users (which should help shape the above items)
+ 1. cards - adding new integrations and cards
+ 2. marketing - getting people to visit to [snapboard.io](https://snapboard.io)
+ 3. optimize - small changes which increase conversion - getting more people to signup and create cards
+ 4. talk - keep talking to users (which should help shape the above items)
 
 So here are my goals/tasks for today:
 
- - [-] Create 6 integrations #cards
- - [x] Added webhook logic (required for Github integration) #cards
+ - [-] Create 6 integrations
+ - [x] Added webhook logic (required for Github integration)
  - [x] Add Snaboard to Webframe #marketing
- - [ ] Start Facebook approval #cards
- - [ ] Add formula dropdown #feature
+ - [ ] Start Facebook approval
+ - [ ] Add formula dropdown
  - [ ] Updates to the homepage for Snapboard #optimize
 
 Still not enough progress on creating cards. Need to keep working at making this faster!
@@ -176,7 +176,7 @@ Still not enough progress on creating cards. Need to keep working at making this
 **Bold** for new integrations
 
 
-#### A better way to handle imported data?
+#### Thinking: A better way to handle imported data?
 
 Having worked with the YouTube data import today, it seems like we may need a better way to work with the data we import. The problem is, some APIs produce a fairly complex multi-depth response (YouTube is a case in point). It returns multiple types of ID, sometimes it's a string, sometimes it's an object! Even the title of a video is not at the root level (you have to use `snippet.title` 🤯)?! If all this sounds confusing, it is! 😅 YouTube's API is a mess (and I'm sure it's not the only one), and I don't want to pass this mess and complexity onto users. So I'm considering tampering/normalizing the data to make it easier to understand and use. 
 
@@ -271,7 +271,7 @@ Wednesday, 23 October 2019
 
 Hired the second part-time dev for Snapboard. Welcome to the team Julio! He'll be working most on the front-end.
 
-![julio](./julio.png "Julio")
+![julio](./julio.jpg "Julio")
 
 To be honest, I've completely forgotten what else I did on this day 😂. I'm writing this 2 days later on Friday, and I've already forgotten. Need to make sure I find time to update this on the actual day - as that means the updates are better!
 
@@ -287,7 +287,7 @@ Next week's focus will be on ramping up the speed to add new cards, improving th
 Of all of those things - adding cards and integrations is the most important.
 
 
-Follow along next week, I'll be updating it daily!
+[Follow along next week](/week-002), I'll be updating it daily!
 
 
 
