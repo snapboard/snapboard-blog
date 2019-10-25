@@ -54,9 +54,9 @@ Julio did an incredible job getting the first version of the formula autocomplet
 
 <div style="position: relative; padding-bottom: 56.42633228840126%; height: 0;"><iframe src="https://www.loom.com/embed/8ccbaec3489d4c77920a7a89b99f5af7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Need to start work on marketing today, and find a way to try more people talking to me.
+Need to start work on marketing today, and find a way to try and get more people talking to me. PLEASE SOMEBODY TALK TO ME! 😂
 
-  - [ ] Talk to a user - Megamaker Slack Group?
+  - [ ] Talk to a potential user (e.g. start-up founder) - Megamaker Slack Group?
   - [ ] Start one new marketing channel
   - [ ] Create new card inputs apprach (make editing cards much nicer!) 
 
