@@ -1,9 +1,8 @@
 ---
 title: Serverless dashboards 🤯
-date: "2019-10-21T00:00:00.000Z"
+date: "2019-10-25T00:00:00.000Z"
 ---
 
-***BTW, if you’re into this kind of stuff - maybe you’d like to [come join us - we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 🚀
 
 One of the really cool parts of [Snapboard](https://snapboard.io) is the ability to create your own custom cards - using React and serverless NodeJS in our in-built editor. We also support installing ANY library on NPM, which makes it super powerful.
 
@@ -166,7 +165,5 @@ We also created an online editor to allow users to submit their own code - but t
 <a href='/editor/new'>
   <button style="cursor: pointer; color: #fff; background-color: #007bff; border-color: #007bff; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; border-radius: .25rem; margin-bottom: 1em;">Create Custom Card</button>
 </a>
-
-***Also, another reminder that [we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 😉
 
 Any questions - you can ping me on [calum@snapboard.io](mailto:calum@snapboard.io).
