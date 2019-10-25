@@ -169,4 +169,4 @@ We also created an online editor to allow users to submit their own code - but t
 
 ***Also, another reminder that [we’re hiring!](https://discuss.snapboard.io/t/were-hiring/16)*** 😉
 
-Any questions - you can ping me on calum@snapboard.io.
+Any questions - you can ping me on [calum@snapboard.io](mailto:calum@snapboard.io).

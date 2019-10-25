@@ -1,11 +1,11 @@
 ---
 title: YC Interview Invite!
 date: "2019-10-17T00:00:00.000Z"
-description: I got a YC interview, so taking a step back to review where I am and next steps!
+description: I got a YC interview, and hired my first 2 devs!
 week: 1
 status: In Progress
 emoji: 🎉
-toc: Plan,Day 1,Day 2,Day 3
+toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Review
 image: ./yc-interview-invite.png
 ---
 
@@ -15,21 +15,16 @@ I've applied to [YC](https://ycombinator.com) 3 times before, and this is the fi
 ![YC Interview Invite](./yc-interview-invite.png "YC Interview Invite")
 
 
-## Weekly Plan
+## Plan
 
 The key goals for this week are to:
 
-  - [ ] Talk to 3 users (and build specific boards for them)
+  - [x] Talk to 3 users (and build specific boards for them)
   - [ ] Create 40 new cards / integrations
   - [ ] Start testing 3 [“Traction”](https://www.amazon.co.uk/Traction-Startup-Achieve-Explosive-Customer/dp/0241242533) growth channels
   - [ ] Setup public Snapboard metrics page - so I can better track changes
-  - [ ] Update website and blog
-  - [ ] [Hire someone](https://discuss.snapboard.io/t/were-hiring/16) to help! 
-
-
-## Weekly Review
-
-*I'll update this at the end of the week! 👍🏽*
+  - [x] Update blog
+  - [x] [Hire someone](https://discuss.snapboard.io/t/were-hiring/16) to help! 
 
 
 ## Daily Log
@@ -205,18 +200,22 @@ Monday, 21 October 2019: ☁️ 13° - Thick cloud and a gentle breeze
 Today's focus is on getting the message out that we're hiring. I really need some help to make sure we've made good progress for YC.
 
  - [x] Add beta mode, so we can give access to 3rd parties to test their integration, without confusing everyone else!
- - [ ] Marketing for hiring (see below)
+ - [x] Marketing for hiring (see below)
+ - [x] Talk to another user
  - [ ] Start Facebook approval #cards
  - [ ] Add 6 more cards
  - [ ] Add formula dropdown #feature
+
+Wow, this was a crazy day. I had all this stuff planned for how to get some help on Snapboard - and it turns out all I needed to do was post on Reactiflux - I was inundated with requests. So, I'll be working with that I've got for now. Fustratingly it took most of the day, so didn't get any more cards added 😢. It really needs to be my top priority! 
 
 
 #### Marketing for Hiring
 
 Here's a quick summary of my plan of action for hiring. I created a new blog post yesterday evening, which I will use as part of the promotion for the job role. It helps to have something related and interesting to offer communities you are posting to.
 
-  - [ ] Slack communities - in particular dev related ones!
-  - [ ] Reactiflux - post my blog article, and to their jobs channel
+  - [x] Publish blog article
+  - [x] Slack communities - in particular dev related ones!
+  - [x] Reactiflux - post my blog article, and to their jobs channel
   - [ ] IndieHackers
   - [ ] HackerNews - post my blog article to HackerNews
   - [ ] Reddit
@@ -224,4 +223,71 @@ Here's a quick summary of my plan of action for hiring. I created a new blog pos
   - [ ] E-mail people who created custom cards on Snapboard
   - [ ] Fiver / Upwork - post a job, need to think of the right thing to ask for!
   - [ ] Medium - look for writers with around 100 upvotes on a tech related article (it means their not a household name so might be interested in this oppertunity!)
+
+
+#### Feedback from user
+
+Founder: Single technical founder, Productivity SaaS
+
+Here are the key points:
+
+ * Doesn't trust the numbers coming from Mixpanel - so uses his DB as a way to track numbers
+ 
+ * Might not give Snapboard direct access to DB, but would be happy to expose an endpoint (would prefer that to push data via an API)
+
+ * Would love to see cards detailing lead to conversion metrics (including trial) - that might involve GA -> Mixpanel -> Stripe
+
+ * Would be willing to give access to data, as long as it proved useful
+
+ * Doesn't go into the DB for metrics
+
+
+Uses the following apps:
+ 
+ * Stripe
+ * Google Analytics
+ * Fullstory / Log Rocket
+ * MySQL - for DB accessed via SSH
+ * Digital Ocean
+ * Mixpanel - plans to use this in future
+
+
+
+### Day 5
+
+Tuesday, 22 October 2019
+
+Hired the first dev for Snapboard. Welcome to the team Dan! Interviewed and hired on the same day 🙌.
+
+![dan](./dan.png "Dan")
+
+
+Most of this day was spent onboarding Dan, and helping him understand the code base. There were also a few changes needed to get the environment up and running on his machine - as this is the first time I've had someone else working on it! Dan will be mainly focussed on adding integrations - because that's one of the biggest drivers for growth and retention.
+
+
+### Day 6
+
+Wednesday, 23 October 2019
+
+Hired the second part-time dev for Snapboard. Welcome to the team Julio! He'll be working most on the front-end.
+
+![julio](./julio.png "Julio")
+
+To be honest, I've completely forgotten what else I did on this day 😂. I'm writing this 2 days later on Friday, and I've already forgotten. Need to make sure I find time to update this on the actual day - as that means the updates are better!
+
+
+## Review
+
+Wow, that week went FAST. 15 days to go until the YC interview. 😬
+
+Overall, not a bad week - 3 out of 6 items complete. Obviously onboarding took up a fair chunck of time, but that's already started to pay dividends, and we should see that only increase over the next week. Everyone on the team is aware of the Nov 7th deadline and working really hard to maximise their progress in this short period.
+
+Next week's focus will be on ramping up the speed to add new cards, improving the user experience around card customization and improving the general user experience. Oh and I'm going to get started on the marketing side of things!
+
+Of all of those things - adding cards and integrations is the most important.
+
+
+Follow along next week, I'll be updating it daily!
+
+
 
