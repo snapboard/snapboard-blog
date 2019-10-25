@@ -271,8 +271,6 @@ Wednesday, 23 October 2019
 
 Hired the second part-time dev for Snapboard. Welcome to the team Julio! He'll be working most on the front-end.
 
-![julio](./julio.jpg "Julio")
-
 To be honest, I've completely forgotten what else I did on this day 😂. I'm writing this 2 days later on Friday, and I've already forgotten. Need to make sure I find time to update this on the actual day - as that means the updates are better!
 
 

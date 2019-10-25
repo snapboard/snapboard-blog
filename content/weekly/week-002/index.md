@@ -30,7 +30,13 @@ Based on the above - I want to acheive the following this week:
 ## Daily Log
 
 ### Day 1
-Thursday, 24 October 2019: ☁️ 14° - Thick cloud and a fresh breeze
+Thursday, 24 October 2019: 🌧 12° - Rain, Rain, Rain
+
+TBC
+
+
+### Day 2
+Friday, 25 October 2019: ☁️ 14° - Thick cloud and a fresh breeze
 
 TBC
 
