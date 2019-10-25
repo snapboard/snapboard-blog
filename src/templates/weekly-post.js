@@ -33,7 +33,7 @@ class ProductPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={title}
+          title={`Week ${week}: ${title}`}
           description={`How I built and launched ${title} in 1 week - ${post.frontmatter.description || post.excerpt}`}
           image={image && image.publicURL}
         />

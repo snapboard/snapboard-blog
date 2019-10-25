@@ -59,10 +59,10 @@ Friday, 18 October 2019: 🌦 14° - Light rain showers and a moderate breeze
 
 Maybe I was a bit too ambitious! Either way, I need to prioritize creating cards. This is one of the best ways I can create new value for people, and prove to YC that I can move quickly. If I can get 6 done per day over the next 17 days - that's 102 cards when I meet YC.
 
-Really pleased we've started to understand who we will target though - this will be really helpful for all future decisions.
+Really pleased we've started to understand who we will target though (see below) - this will be really helpful for all future decisions.
 
-
-#### Which users should I target?
+<details>
+<summary><h4>Which users should I target?</h4></summary>
 
 I've seen all of the following groups on Snapboard so far, but I need to have more focus to make the product better for a specific group, and then I can scale to others later.
 
@@ -88,10 +88,13 @@ Based on this, the main group I've decided to target is: **Start-up founders (ea
 
 The biggest draw back here, is their likelihood to pay. That said, if we can make it work for start-up founders, then I think we will be able to transition into teams and businesses. Also, if we can make these guys pay - that's a very good sign!
 
+</details>
 
-#### What marketing channels should I use?
 
-Based on the above - I've decided the 3 traction channels I'm going to try first are. They will get a 2 week period starting on *Monday 21 October* to determine which to focus on:
+<details>
+  <summary><h4>What marketing channels should I use?</h4></summary>
+
+  Based on the above - I've decided the 3 traction channels I'm going to try first are. They will get a 2 week period starting on *Monday 21 October* to determine which to focus on:
 
   1. Integrate with Existing Platforms - this is a bit of a no brainer as Snapboard is almost entirely built on integrations! I need to think about what platforms my target group will be on. 🤔
 
@@ -100,9 +103,10 @@ Based on the above - I've decided the 3 traction channels I'm going to try first
   3. Community - where do start-up founders hang-out? Start-up school, IndieHackers, Slack communities, Quora?
 
 I'll be measuring these on hits to the website and conversion to signup. **TODO:** need to make sure there is a way for me to measure this.
+</details>
 
-
-#### What kinds of cards would Start-up founders be most interested in?
+<details>
+  <summary><h4>What kinds of cards would Start-up founders be most interested in?</h4></summary>
 
   1. Server metrics - a simple look at how your website is performing - could also involve DBs (how many records in a queue, uptime stats, total number of errors)
   2. Website/user analytics - Google Analytics, Mixpanel, Amplitude, Segment
@@ -111,32 +115,36 @@ I'll be measuring these on hits to the website and conversion to signup. **TODO:
   5. List of customers, e-mail address and possibly status (paying / non-paying) - most likely from a DB
   6. Support requests - some metrics on how many tickets - would be much more interesting if we could do this by category! E.g. 20% of support requests are for password reset.
 
+</details>
 
-#### Feedback from User 1
 
-Founder - SaaS / Video
+<details>
+  <summary><h4>Feedback from User 1</h4></summary>
 
-1. Interested in usage metrics - 
-    * New visitors to the site - Google Analytics
-    * Users who render a video - Mixpanel
-    * New paid users - Stripe
-2. Number of failures - Google Cloud / DB
-3. Being able to restart servers - Google Cloud / DB
-4. Resetting passwords (as currently have to go into DB) - DB
-5. Check if user is on paid plan - DB / Stripe
+  Founder - SaaS / Video
 
-They use the following apps:
+  1. Interested in usage metrics - 
+      * New visitors to the site - Google Analytics
+      * Users who render a video - Mixpanel
+      * New paid users - Stripe
+  2. Number of failures - Google Cloud / DB
+  3. Being able to restart servers - Google Cloud / DB
+  4. Resetting passwords (as currently have to go into DB) - DB
+  5. Check if user is on paid plan - DB / Stripe
 
- * Google Cloud
- * Postgres
- * Mailgun
- * Mailchimp
- * Mixpanel
- * Netlify
- * Heroku
- * Bitbucket
- * Sentry
+  They use the following apps:
 
+   * Google Cloud
+   * Postgres
+   * Mailgun
+   * Mailchimp
+   * Mixpanel
+   * Netlify
+   * Heroku
+   * Bitbucket
+   * Sentry
+
+</details>
 
 
 ### Day 3
@@ -154,7 +162,7 @@ I want to make sure that I make progress with each of the following every day:
 
 So here are my goals/tasks for today:
 
- - [-] Create 6 integrations
+ - [x] Create 4 integrations
  - [x] Added webhook logic (required for Github integration)
  - [x] Add Snaboard to Webframe #marketing
  - [ ] Start Facebook approval
@@ -173,10 +181,8 @@ Still not enough progress on creating cards. Need to keep working at making this
  - [ ] **Wufoo** - number of response to form
  - [ ] **Wufoo** - chart with question response totals
 
-**Bold** for new integrations
-
-
-#### Thinking: A better way to handle imported data?
+<details>
+  <summary><h4>A better way to handle imported data?</h4></summary>
 
 Having worked with the YouTube data import today, it seems like we may need a better way to work with the data we import. The problem is, some APIs produce a fairly complex multi-depth response (YouTube is a case in point). It returns multiple types of ID, sometimes it's a string, sometimes it's an object! Even the title of a video is not at the root level (you have to use `snippet.title` 🤯)?! If all this sounds confusing, it is! 😅 YouTube's API is a mess (and I'm sure it's not the only one), and I don't want to pass this mess and complexity onto users. So I'm considering tampering/normalizing the data to make it easier to understand and use. 
 
@@ -191,6 +197,7 @@ The problem with editing/normalizing though is as follows:
 
 
 🤔 Need to think about this some more.
+</details>
 
 
 ### Day 4
@@ -208,10 +215,10 @@ Today's focus is on getting the message out that we're hiring. I really need som
 
 Wow, this was a crazy day. I had all this stuff planned for how to get some help on Snapboard - and it turns out all I needed to do was post on Reactiflux - I was inundated with requests. So, I'll be working with that I've got for now. Fustratingly it took most of the day, so didn't get any more cards added 😢. It really needs to be my top priority! 
 
+<details>
+  <summary><h4>Marketing for Hiring</h4></summary>
 
-#### Marketing for Hiring
-
-Here's a quick summary of my plan of action for hiring. I created a new blog post yesterday evening, which I will use as part of the promotion for the job role. It helps to have something related and interesting to offer communities you are posting to.
+  <p>Here's a quick summary of my plan of action for hiring. I created a new blog post yesterday evening, which I will use as part of the promotion for the job role. It helps to have something related and interesting to offer communities you are posting to.</p>
 
   - [x] Publish blog article
   - [x] Slack communities - in particular dev related ones!
@@ -224,8 +231,11 @@ Here's a quick summary of my plan of action for hiring. I created a new blog pos
   - [ ] Fiver / Upwork - post a job, need to think of the right thing to ask for!
   - [ ] Medium - look for writers with around 100 upvotes on a tech related article (it means their not a household name so might be interested in this oppertunity!)
 
+  </details>
 
-#### Feedback from user
+
+<details>
+  <summary><h4>User Feedback</h4></summary>
 
 Founder: Single technical founder, Productivity SaaS
 
@@ -251,6 +261,7 @@ Uses the following apps:
  * Digital Ocean
  * Mixpanel - plans to use this in future
 
+</details>
 
 
 ### Day 5
@@ -270,6 +281,8 @@ Most of this day was spent onboarding Dan, and helping him understand the code b
 Wednesday, 23 October 2019
 
 Hired the second part-time dev for Snapboard. Welcome to the team Julio! He'll be working most on the front-end.
+
+![julio](./julio.jpg "Julio")
 
 To be honest, I've completely forgotten what else I did on this day 😂. I'm writing this 2 days later on Friday, and I've already forgotten. Need to make sure I find time to update this on the actual day - as that means the updates are better!
 
