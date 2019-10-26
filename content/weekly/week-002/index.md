@@ -58,11 +58,11 @@ Need to start work on marketing today, and find a way to try and get more people
 
   - [x] Talk to a potential user (e.g. start-up founder) - Megamaker Slack Group?
   - [x] Sent blog e-mail out
+  - [x] Fixed a bunch of UX issues
   - [ ] Create new card inputs apprach (make editing cards much nicer!) 
   - [ ] Start one new marketing channel
 
-
-*To be continued...*
+Not a bad day, but still haven't been able to get around to the "Create new card inputs" task. I need to do this at the start of the day, because it takes significant energy to do - so if I'm tired it ends up not happening. It will be the first thing I look at tomorrow!
 
 <details>
 	<summary><h4>Talk with Potential User</h4></summary>
@@ -87,6 +87,44 @@ Need to start work on marketing today, and find a way to try and get more people
 	* AWS / EC2 and RDS
 	* Datadog
 	* Logrocket
+</details>
+
+
+### Day 3
+
+Saturday, 26 October 2019: 🌧 17° - Heavy rain and a moderate breeze
+
+This isn't going to be a full working day, but I've got a good chunk of time - so I'm including an update. I really want to get the new card inputs done - because right now, it's blocking us creating new cards. And cards means ~~prizes~~ better engagement!
+
+  - [ ] Create new card inputs apprach (make editing cards much nicer!)
+  - [ ] Create a better admin page for creating template cards
+  - [ ] Add Slack integration
+  - [ ] Add Airtable integration
+
+*To be continued...*
+
+<details>
+	<summary><h4>What to do about importer cards?</h4></summary>
+
+	People aren't using the "importer" cards (cards which import raw data) because they're not shown in the main "+ Add card" modal. But if I add them there, it will be super confusing because when they select an "importer" card, it will not be added to their current active board but to the import boards section.
+
+	The import boards section was added, because when adding pre-configured cards, we often need to import additional data - e.g. for the 'Stripe Customer Count' card (we need to import a list of Stripe customers). We add this imported data to the imports section, to allow the user to see their raw data, how it's structured and potentially use it when writing their own formula.
+
+	For some apps (e.g. database apps, Airtable), there's no easy way for us to create pre-configured cards - because the data from databases is so varied. So the user will probably want to import the raw data first, and then manually use it in a chart/number card.
+
+	We could remove the importers secton, and add "importer" cards to the current active board - BUT that makes it harder to find and organize. And when a user creates a pre-configured card for a board, we'd end up adding 2 cards to their board - the pre-populated card and the importer card (again confusing). 
+
+	##### Things to think about
+
+	* Should we have an importers section at all? How would the user select data without them? 
+
+		* We could have a kind-of hidden section on every board, which automatically shows dependencies for that board (obviously only shown to CREATOR roles). Having it on the same board would also mean the user doesn't have to move around as much. This would solve the "adding 2 cards to their board", because one would be semi-hidden. We would only need to hide it if we added it as part of a "pre-configured" card - and the user could hide any other cards they want too - e.g. they might want to have an data grid card, log card, etc - that's visible to admins only. In this case, if the user directly adds an importer card - then it shows on the main board - and they can then choose to highlight it later?
+
+		* We could use a formula function to get data - but that makes it harder for a user because they would have to deal with IDs - which most users won't understand or know how to find.
+
+	* Is it really impossible to create pre-configured cards for database-type apps?
+
+
 </details>
 
 
