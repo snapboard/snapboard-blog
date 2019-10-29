@@ -101,7 +101,7 @@ This isn't going to be a full working day, but I've got a good chunk of time - s
   - [ ] Add Slack integration
   - [ ] Add Airtable integration
 
-*To be continued...*
+
 
 <details>
 	<summary><h4>What to do about importer cards?</h4></summary>
@@ -126,6 +126,32 @@ This isn't going to be a full working day, but I've got a good chunk of time - s
 
 
 </details>
+
+
+### Day 4
+
+Monday, 28 October 2019: 10 days to go!
+
+I HAVE TO DO "Create new card inputs apprach (make editing cards much nicer!)" TODAY. If I do nothing else - that's okay. I need to get that done. I can't create new cards without it - and we need more cards!
+
+  - [x] Create new card inputs apprach (make editing cards much nicer!)
+
+
+End of the day update: Ok, so this is almost finished - there are a few loose ends to tie up (as always) but I should be able to get this finished tomorrow morning.
+
+
+### Day 5
+
+Tuesday, 29 October 2019: 9 days to go!
+
+	- [ ] Finish off changes for chart card
+	- [ ] UX improvements
+	- [ ] Talk to a potential user
+	- [ ] Create a better admin page for creating populated cards fast!
+	- [ ] Create a better "list" card
+
+
+*To be continued...*
 
 
 ## Review
