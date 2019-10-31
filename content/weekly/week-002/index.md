@@ -144,15 +144,76 @@ End of the day update: Ok, so this is almost finished - there are a few loose en
 
 Tuesday, 29 October 2019: 9 days to go!
 
-	- [ ] Finish off changes for chart card
-	- [ ] UX improvements
-	- [ ] Talk to a potential user
+	- [x] Finish off changes for chart card
+	- [x] UX improvements
+	- [x] Talk to a potential user
+	- [x] Deploy updates
 	- [ ] Create a better admin page for creating populated cards fast!
 	- [ ] Create a better "list" card
 
 
-*To be continued...*
+I finished the chart card input and it's working really well - super psyched about that as it's a real step change in the way people add chart cards. Obviously will still need futher tweaks - but still ha
 
+Also, spoke to another user today:
+
+<details>
+	<summary><h4>Talk with user!</h4></summary>
+		
+	Founder - Consultancy
+
+	Works with start-ups and businesses to help them grow. Use partnerships to grow. Dashboards that demonstrate worthiness to clients is useful.
+
+	Key apps:
+
+   * Stripe
+	 * Streak
+	 * Google Search Console
+	 * Kajabi
+
+</details>
+
+
+### Day 6
+
+Wednesday, 30 October 2019: 8 days to go!
+
+	- [x] Finish off changes for chart card
+	- [ ] UX improvements
+	- [x] Talk to a potential user
+	- [ ] Deploy updates
+	- [ ] Create a better admin page for creating populated cards fast!
+	- [ ] Create a better "list" card
+
+Also spoke to a YC alumni today, who gave me a mock interview and was super helpful! Key takeaways:
+
+ * Shorter answers (I like to talk a lot 😅)
+ * Focus on customer over tech
+ * Have a key insight that you want to share
+
+
+
+### Day 7
+
+Thursday, 31 October 2019: 7 days to go!
+
+	- [ ] UX improvements
+	- [ ] Create a better "list" card
+	- [ ] Move importers to the main boards (and them to selector)
+
+
+Met with the guys from [GFC](https://www.globalfounderscapital.com) today, they were super useful - again loads of great feedback! Here's a few highlights:
+
+	* Shorter answers (again 😂)
+  * Add metrics to every answer - particuarly for retention!
+  * Market size question needs more work - broad-range of customers - E-Commerce, Agencies, Start-ups. Bottom up $10, average team x5 = $50. 10% of start-ups with seed funding. Look at growth of similar YC companies in this space. 40% of Slack is Enterprise.
+  * More focus on how we are prioritizing customer feedback
+  * Remember to always be custoemr-centric!
+
+I'm planning to send out a big update to ALL existing subscribers on Monday - so we need some good updates for them. That's where our focus will be over the next few days!
+
+
+
+*To be continued...*
 
 ## Review
 
