@@ -5,7 +5,7 @@ description: Need to increase the speed of creating new cards to increase engage
 week: 2
 score: In Progress
 emoji: 🃏
-toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Day 7,Day 8,Review
+toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Day 7,Day 8,Day 9,Day 10,Day 11
 image: ./beer.png
 ---
 
@@ -299,25 +299,35 @@ RE-LAUNCH DAY tomorrow. Pretty excited - but loads to do! Also, I have another m
 The most important thing is to get the integrations published and the import cards added to the card menu.
 
  - [ ] Publish the 20 new integrations (we've been working on these all week), but we need to make sure all have cards ready and visible in the directory!
+ - [x] Update list view card
  - [ ] Add import cards to the *+Add card* modal
  - [ ] Add "Make card from card" - e.g. the user can create a chart card from a grid card
- - [ ] Mock interview
+ - [x] Mock interview
  - [ ] UX Improvements
 
 
-*To be continued...*
+### Day 11
 
-<details>
-	<summary><h4>Mock Interview</h4></summary>
+Monday, 04 November 2019: 4 days to go!
 
-*Scheduled for 17.00PM*
+STILL NOT RE-LAUNCHED - Argh, not this again. This is so fustrating. I need to just send out this darn mail. 
 
-</details>
+OK this HAS to be the last day. I'm sending it out tomorrow - no matter what happens. If you don't have an e-mail in your inbox tomorrow then... feel free to send me some abuse!
+
+This is the only task for today - get ready for launch.
+
+ - [x] Publish cards ready for launch
+
+Update: OK - that seems to have done the trick. I'm now ready for launch!! 😅
 
 
-## Review
+### RE-LAUNCH
 
-*Will update at the end of the week 👍🏽*
+Here's the e-mail, see I did send it - I'll let you know the results in next weeks update :) Plus next week is YC week, so stay tuned for whether I get in or not.
+
+
+
+
 
 
 
