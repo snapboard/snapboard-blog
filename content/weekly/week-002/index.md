@@ -3,9 +3,9 @@ title: Make more cards
 date: "2019-10-24T00:00:00.000Z"
 description: Need to increase the speed of creating new cards to increase engagement.
 week: 2
-score: In Progress
+score: 7/10
 emoji: 🃏
-toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Day 7,Day 8,Day 9,Day 10,Day 11
+toc: Plan,Day 1,Day 2,Day 3,Day 4,Day 5,Day 6,Day 7,Day 8,Day 9,Day 10,Day 11,RE-LAUNCH
 image: ./beer.png
 ---
 
@@ -323,7 +323,13 @@ Update: OK - that seems to have done the trick. I'm now ready for launch!! 😅
 
 ### RE-LAUNCH
 
-Here's the e-mail, see I did send it - I'll let you know the results in next weeks update :) Plus next week is YC week, so stay tuned for whether I get in or not.
+This wasn't suppose to be so difficult. Sending an e-mail to existing subscribers with some updates, should be a really simple non-issue. But I find myself really not wanting to send out this e-mail. So many thoughts go through your head... what if this is the only chance to get people back using Snapboard? What if everyone unsubscribes because the updates aren't good enough? Shouldn't I hold off just one more week to make sure the update is better?
+
+I think we all go through this as product builders - but it's that kind of attitude that led me to not launch products in the past. So I'm going to push through the pain, push the button and hold on tight.
+
+Update: Well I did it. Here's the e-mail, see I did send it - I'll let you know the results in next weeks update :) Plus next week is YC week, so stay tuned for whether I get in or not.
+
+![Email](./email.png "Email")
 
 
 
